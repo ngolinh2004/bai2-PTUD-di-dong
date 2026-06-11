@@ -347,93 +347,87 @@ Android sẽ tự động hiển thị ngôn ngữ tương ứng với thiết l
 
 •	Tạo app1 sử dụng cơ chế Dữ liệu chuẩn bị trước trong Assets
 o	Tạo file dữ liệu mẫu trong thư mục Assets (nganhhoc.json)
- 
+
+ <img width="856" height="481" alt="image" src="https://github.com/user-attachments/assets/26a5beff-cea5-40d8-a9ea-9490b361bef4" />
 
 o	Xây dựng lớp Model NganhHoc.java để ánh xạ dữ liệu JSON
- 
 
-
+ <img width="857" height="482" alt="image" src="https://github.com/user-attachments/assets/06370216-ef1b-4638-b9be-cbe897514fbf" />
 
 o	Giao diện màn hình tra cứu ngành học khi khởi động ứng dụng
  
+<img width="712" height="391" alt="image" src="https://github.com/user-attachments/assets/4991cef6-bbbb-4f43-96e1-c079b6ad76c0" />
 
 o	Code đọc dữ liệu JSON từ thư mục Assets
  
-
+<img width="717" height="403" alt="image" src="https://github.com/user-attachments/assets/47e71e7f-a03d-4c48-9ad2-b7e458ea6f07" />
 
 o	Thuật toán phân tích (Parse) dữ liệu JSON bằng JSONArray
  
-
-
+<img width="738" height="291" alt="image" src="https://github.com/user-attachments/assets/1a11b1c2-acee-44c9-bd6e-19a2b33d7e57" />
 
 o	Thiết kế giao diện Activity chính bằng XML
  
+<img width="739" height="422" alt="image" src="https://github.com/user-attachments/assets/103ed752-3be6-44a1-a9d6-4424af737407" />
 
 o	Kết quả hiển thị danh sách ngành học sau khi xử lý dữ liệu
 
- 	 
+<img width="317" height="508" alt="image" src="https://github.com/user-attachments/assets/1097b480-6a1e-4f22-aabc-c8ac93b8a0a7" />
 
-
+<img width="410" height="342" alt="image" src="https://github.com/user-attachments/assets/8a82b219-aeb4-451a-bada-2b3e5afa5eb4" />
 
 
 •	Tạo app 2(android studio): tạo app tương đương với Mit App inventor
 o	Giao diện thiết kế Activity About trong Android Studio
  
+<img width="872" height="490" alt="image" src="https://github.com/user-attachments/assets/66a3501a-c70d-4e9b-8afa-cfbb6cfef3ff" />
 
- 
-
-
-
-
-
-
+<img width="867" height="488" alt="image" src="https://github.com/user-attachments/assets/8c5892a3-2bcc-4605-aa72-9163d63b09c0" />
 
 o	Thiết kế giao diện Activity About và điều hướng Activity
  
+<img width="878" height="494" alt="image" src="https://github.com/user-attachments/assets/93df90cf-b667-467a-a8d0-b39e223cee97" />
 
 o	Giao diện Activity Giải Toán
  
-
-
-
+<img width="888" height="499" alt="image" src="https://github.com/user-attachments/assets/9ecbbe3d-7ed0-47d1-99ad-0f2619e12572" />
 
 
 o	Thiết kế Activity WebView
- 
+
+ <img width="887" height="499" alt="image" src="https://github.com/user-attachments/assets/8841b6b5-38cd-4c90-a315-4116e1cb4888" />
+
 
 o	Khai báo sự kiện chuyển Activity trong MainActivity
  
-
-
+<img width="893" height="502" alt="image" src="https://github.com/user-attachments/assets/a83654fb-26e4-41a8-9aa1-b4bc27b326c0" />
 
 
 o	Xây dựng chức giải toán và xử lý dữ liệu
  
+<img width="874" height="491" alt="image" src="https://github.com/user-attachments/assets/094ac522-bc17-472e-bb9f-66b34eb6fd4f" />
 
 o	Tích hợp API gửi kết quả bài toán bằng Retrofit/Volley
 
- 
-
-
-
+ <img width="880" height="495" alt="image" src="https://github.com/user-attachments/assets/d6c680a6-3a8a-4153-b75d-1495f4d6d8a9" />
 
 
 o	Xử lý phản hồi JSON từ Server
  
+<img width="826" height="465" alt="image" src="https://github.com/user-attachments/assets/f926870e-643e-4d42-8994-a24b79d312ff" />
 
 o	Kết quả chạy Activity About trên thiết bị Android
+
+ <img width="474" height="778" alt="image" src="https://github.com/user-attachments/assets/9b7fbce6-1c5c-41d8-8751-ee3daff590b1" />
  
+
 o	Kết quả chạy Activity Giải Toán và hiển thị kết quả
  
-
-
-
-
+<img width="489" height="1086" alt="image" src="https://github.com/user-attachments/assets/101a38ae-3379-4cd0-9e29-74c4bb721fb4" />
 
 o	Kết quả chạy Activity WebView truy cập web https://k58kmt.tdh.io.vn?masv=K225480106038
  
-
-
+<img width="654" height="480" alt="image" src="https://github.com/user-attachments/assets/f5875256-4816-47d8-a6dc-e495660c9955" />
 
 
 
