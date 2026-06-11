@@ -161,12 +161,19 @@ if(ContextCompat.checkSelfPermission(
                   Manifest.permission.CAMERA)
                   
                   != PackageManager.PERMISSION_GRANTED)
+                  
             {
+            
                    ActivityCompat.requestPermissions(
+                   
                        this,
+                       
                        new String[]{
+                       
                               Manifest.permission.CAMERA
+                              
                       },
+                      
                      1);
                   }
 •	Ý nghĩa
@@ -174,24 +181,32 @@ o	Checkselfpermission() : Kiểm tra đã có quyền chưa.
 o	Requestpermissions() : Hiện hộp thoại xin quyền.
 
 •	Giao diện Android
+
 Ví dụ :
+
 <Button
+   
     android:id="@+id/btnLogin"
+    
     android:layout_width="wrap_content"
+    
     android:layout_height="wrap_content"
+    
 android:text="Đăng nhập"/>
+
 o	UI Design : Android Studio hỗ trợ
 o	Design : Kéo thả.
 o	Code : Viết XML.
 o	Split : Xem cả hai.
-4.	Thuộc tính text, hoặc các thuộc tính khác: giá trị hardcode => lưu vào nới khác, tham chiếu tới nó:
+## 4.	Thuộc tính text, hoặc các thuộc tính khác: giá trị hardcode => lưu vào nới khác, tham chiếu tới nó:
+
 •	Cú pháp của việc tham chiếu 
 o	Cú pháp chung : @loai_tai_nguyen/ten_tai_nguyen
 o	Tham chiếu String : android:text="@string/hello"
 o	Tham chiếu Color : android:textColor="@color/red"
 o	Tham chiếu Drawable (ảnh) : android:src="@drawable/logo"
-o	Tham chiếu Kích thước (Dimension)
-android:textSize="@dimen/text_size"
+o	Tham chiếu Kích thước (Dimension) android:textSize="@dimen/text_size"
+
 •	Ưu điểm của việc tham chiếu : 
 o	Dễ bảo trì
 o	Tái sử dụng
@@ -199,53 +214,95 @@ o	Hỗ trợ đa ngôn ngữ
 o	Hỗ trợ Theme
 •	Os hỗ trợ auto việc lấy giá trị tham chiếu theo location, language, theme
 OS tự lấy theo Language, Location, Theme
+
 Ví dụ : 
 o	values-en : 
+
 <string name="hello">
+   
     Hello
+    
 </string>
+
 o	values-vi : 
+
 <string name="hello">
+   
     Xin chào
+    
 </string>
+
 o	Code : android: text="@string/hello"
 o	Người dùng đổi ngôn ngữ: 
+
 English → Hello
+
 Tiếng Việt → Xin chào
+
 •	Việc hỗ trợ auto này giúp app làm được : 
 o	Hỗ trợ nhiều quốc gia 
 o	Hỗ trợ nhiều ngôn ngữ 
 o	Hỗ trợ Dark Mode 
 o	Không cần sửa code Java	
-5.	Đối tượng chứa: gộp các đối tượng con lại: cùng 1 quy luật sắp xếp để hiển thị 
+## 5.	Đối tượng chứa: gộp các đối tượng con lại: cùng 1 quy luật sắp xếp để hiển thị 
 •	Các đối tượng con nằm kề nhau theo chiều dọc | hoặc ngang, gravity code tương tác với layout: vd hiển thị text
+
         Trong Android, Layout thường dùng để sắp xếp các View con theo chiều dọc hoặc chiều ngang.
+        
 o	Sắp xếp theo chiều dọc : Các đối tượng sẽ hiển thị từ trên xuống dưới.
+
 <LinearLayout
+
     android:layout_width="match_parent"
+   
     android:layout_height="match_parent"
+    
     android:orientation="vertical">
+    
     <TextView
+    
         android:text="Họ tên"/>
+        
     <Button
+    
         android:text="Lưu"/>
+        
 </LinearLayout>
+
 o	Sắp xếp theo chiều ngang : Các đối tượng sẽ hiển thị từ trái sang phải.
+
 <LinearLayout
+   
     android:layout_width="match_parent"
+    
     android:layout_height="wrap_content"
+    
     android:orientation="horizontal">
+    
     <Button
+    
         android:text="Có"/>
+        
     <Button
+       
         android:text="Không"/>
+        
 </LinearLayout>
-o	Thuộc tính Gravity : Gravity dùng để căn chỉnh vị trí hiển thị của nội dung bên trong View hoặc Layout.
+
+o	Thuộc tính Gravity : Gravity dùng để căn chỉnh vị trí hiển thị của nội dung bên trong View 
+
+hoặc Layout.
+
 <TextView
+    
     android:layout_width="match_parent"
+   
     android:layout_height="wrap_content"
+    
     android:text="Xin chào"
+    
 android:gravity="center"/>
+
 o	Một số giá trị thường dùng:
 -	Center 
 -	Left 
@@ -254,23 +311,38 @@ o	Một số giá trị thường dùng:
 -	Bottom 
 -	Center_horizontal 
 -	Center_vertical
-•	Mong muốn text hiển thị phù hợp với thiết lập LOCATION, LANGUAGE, THEME của người dùng thì làm ntn? (tránh hardcode)
-         Trong Android không nên ghi trực tiếp văn bản vào mã nguồn hoặc giao diện vì sẽ gây khó khăn khi thay đổi ngôn ngữ hoặc giao diện.
+•	Mong muốn text hiển thị phù hợp với thiết lập LOCATION, LANGUAGE, THEME của người dùng thì
+
+làm ntn? (tránh hardcode)
+       
+         Trong Android không nên ghi trực tiếp văn bản vào mã nguồn hoặc giao diện vì sẽ gây khó 
+         
+         khăn khi thay đổi ngôn ngữ hoặc giao diện.
 o	Lưu chuỗi trong strings.xml
 -	File: res/values/strings.xml
 -	Nội dung:
+  
 <resources>
-    <string name="hello">Xin chào</string>
+   
+   <string name="hello">Xin chào</string>
+
 </resources>
+
 Sử dụng: android:text="@string/hello" hoặc txtHello.setText(R.string.hello);
+
 o	Hỗ trợ nhiều ngôn ngữ : 
 -	Tạo nhiều thư mục tài nguyên:
+  
 res/values/
+
 res/values-vi/
+
 res/values-en/
+
   Ví dụ:
 o	values-en/strings.xml : <string name="hello">Hello</string>
 o	values-vi/strings.xml : <stringname="hello">Xinchào</string>
+
 Android sẽ tự động hiển thị ngôn ngữ tương ứng với thiết lập của người dùng.
 
 •	Tạo app1 sử dụng cơ chế Dữ liệu chuẩn bị trước trong Assets
